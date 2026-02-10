@@ -8,35 +8,35 @@ const categories = [
     icon: Tag,
     description: "Professional handheld labeling for office and home",
     to: "/products/label-makers",
-    products: ["LetraTag LT-100H", "LetraTag 200B", "LabelManager 160"],
+    products: ["LabelManager™ Executive 640CB", "LabelManager™ 420P", "LabelManager™ 160", "LabelManager™ 280"],
   },
   {
     name: "PC & Mac Label Printers",
     icon: Monitor,
     description: "Desktop-connected precision printing solutions",
     to: "/products/pc-mac-printers",
-    products: ["LabelWriter 550", "LabelWriter 550 Turbo", "LabelWriter 5XL"],
+    products: ["LabelWriter™ 550", "LabelWriter™ 550 Turbo"],
   },
   {
     name: "Embossers",
     icon: Stamp,
     description: "Classic embossing tools for durable labels",
     to: "/products/embossers",
-    products: ["DYMO Omega", "DYMO Junior", "DYMO Embossing Tool"],
+    products: ["Omega Embosser", "Rhino™ M1011"],
   },
   {
     name: "Industrial Labelers",
     icon: Factory,
     description: "Heavy-duty labeling for warehouses and industry",
     to: "/products/industrial-labelers",
-    products: ["Rhino 6000+", "XTL 500", "Rhino 4200"],
+    products: ["Rhino™ 6000+"],
   },
   {
     name: "Home & Mobile Label Makers",
     icon: Smartphone,
     description: "Portable Bluetooth-enabled labeling on the go",
     to: "/products/home-mobile",
-    products: ["LetraTag 200B", "MobileLabeler", "DYMO Letratag XR"],
+    products: ["LetraTag® 100H", "LetraTag® 200B"],
   },
 ];
 
@@ -101,7 +101,7 @@ const ProductCategories = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+              <div className={`grid grid-cols-1 ${active.products.length >= 3 ? 'sm:grid-cols-2 lg:grid-cols-4' : active.products.length === 2 ? 'sm:grid-cols-2' : ''} gap-4 mb-8`}>
                 {active.products.map((product) => (
                   <div
                     key={product}
