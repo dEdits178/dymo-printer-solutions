@@ -38,9 +38,19 @@ const ProductDetail = () => {
           </Link>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            {/* Product Image Placeholder */}
+            {/* Product Image */}
             <div className="glass-strong rounded-2xl p-8 flex items-center justify-center aspect-square">
-              <div className="text-center">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-full object-contain rounded-lg"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  target.nextElementSibling?.classList.remove('hidden');
+                }}
+              />
+              <div className="hidden text-center">
                 <Tag className="w-20 h-20 text-muted-foreground/20 mx-auto mb-4" />
                 <p className="text-muted-foreground text-sm">Product Image</p>
               </div>

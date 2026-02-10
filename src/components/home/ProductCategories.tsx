@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Tag, Monitor, Stamp, Factory, Smartphone, ArrowRight } from "lucide-react";
+import { products, getProductsByCategory } from "@/data/products";
 
 const categories = [
   {
@@ -8,35 +9,35 @@ const categories = [
     icon: Tag,
     description: "Professional handheld labeling for office and home",
     to: "/products/label-makers",
-    products: ["LabelManager™ Executive 640CB", "LabelManager™ 420P", "LabelManager™ 160", "LabelManager™ 280"],
+    categorySlug: "label-makers",
   },
   {
     name: "PC & Mac Label Printers",
     icon: Monitor,
     description: "Desktop-connected precision printing solutions",
     to: "/products/pc-mac-printers",
-    products: ["LabelWriter™ 550", "LabelWriter™ 550 Turbo"],
+    categorySlug: "pc-mac-printers",
   },
   {
     name: "Embossers",
     icon: Stamp,
     description: "Classic embossing tools for durable labels",
     to: "/products/embossers",
-    products: ["Omega Embosser", "Rhino™ M1011"],
+    categorySlug: "embossers",
   },
   {
     name: "Industrial Labelers",
     icon: Factory,
     description: "Heavy-duty labeling for warehouses and industry",
     to: "/products/industrial-labelers",
-    products: ["Rhino™ 6000+"],
+    categorySlug: "industrial-labelers",
   },
   {
     name: "Home & Mobile Label Makers",
     icon: Smartphone,
     description: "Portable Bluetooth-enabled labeling on the go",
     to: "/products/home-mobile",
-    products: ["LetraTag® 100H", "LetraTag® 200B"],
+    categorySlug: "home-mobile",
   },
 ];
 
@@ -52,6 +53,7 @@ const ProductCategories = () => {
 
   const active = categories[activeIndex];
   const Icon = active.icon;
+  const categoryProducts = getProductsByCategory(active.categorySlug);
 
   return (
     <section className="py-20 bg-background">
@@ -101,17 +103,28 @@ const ProductCategories = () => {
                 </div>
               </div>
 
-              <div className={`grid grid-cols-1 ${active.products.length >= 3 ? 'sm:grid-cols-2 lg:grid-cols-4' : active.products.length === 2 ? 'sm:grid-cols-2' : ''} gap-4 mb-8`}>
-                {active.products.map((product) => (
-                  <div
-                    key={product}
-                    className="bg-card rounded-xl p-4 border border-border hover:border-primary/30 transition-colors"
+              <div className={`grid grid-cols-1 ${categoryProducts.length >= 3 ? 'sm:grid-cols-2 lg:grid-cols-4' : categoryProducts.length === 2 ? 'sm:grid-cols-2' : ''} gap-4 mb-8`}>
+                {categoryProducts.map((product) => (
+                  <Link
+                    key={product.slug}
+                    to={`/product/${product.slug}`}
+                    className="bg-card rounded-xl p-4 border border-border hover:border-primary/30 transition-colors group"
                   >
-                    <div className="w-full h-24 bg-background rounded-lg flex items-center justify-center mb-3">
-                      <Tag className="w-8 h-8 text-muted-foreground/30" />
+                    <div className="w-full h-24 bg-background rounded-lg flex items-center justify-center mb-3 overflow-hidden">
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-full object-contain p-2"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          target.nextElementSibling?.classList.remove('hidden');
+                        }}
+                      />
+                      <Tag className="w-8 h-8 text-muted-foreground/30 hidden" />
                     </div>
-                    <p className="text-sm font-medium text-foreground">{product}</p>
-                  </div>
+                    <p className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">{product.name}</p>
+                  </Link>
                 ))}
               </div>
 

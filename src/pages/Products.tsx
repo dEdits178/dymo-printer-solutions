@@ -41,8 +41,18 @@ const Products = () => {
                   to={`/product/${product.slug}`}
                   className="glass-strong rounded-2xl p-6 group hover:border-primary/30 transition-all"
                 >
-                  <div className="w-full h-32 bg-background rounded-xl flex items-center justify-center mb-4">
-                    <Tag className="w-10 h-10 text-muted-foreground/20" />
+                  <div className="w-full h-32 bg-background rounded-xl flex items-center justify-center mb-4 overflow-hidden">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-contain p-2"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = 'none';
+                        target.nextElementSibling?.classList.remove('hidden');
+                      }}
+                    />
+                    <Tag className="w-10 h-10 text-muted-foreground/20 hidden" />
                   </div>
                   <h3 className="font-display text-lg font-bold text-foreground mb-2">{product.name}</h3>
                   <p className="text-muted-foreground text-sm line-clamp-2 mb-4">{product.description}</p>
