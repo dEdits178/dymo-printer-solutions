@@ -65,7 +65,7 @@ export const products: Product[] = [
     category: "Embossers",
     categorySlug: "embossers",
     description: "The DYMO Omega Embosser is a classic, easy-to-use embossing label maker that creates raised-letter labels on colored self-adhesive tape. It requires no batteries or power source, making it perfect for quick, portable labeling tasks around the home, office, or workshop.",
-    image: "/products/Omega%20Em.PNG"
+    image: "/products/Omega_Em.PNG"
   },
   {
     slug: "rhino-m1011",
@@ -73,7 +73,7 @@ export const products: Product[] = [
     category: "Embossers",
     categorySlug: "embossers",
     description: "The Rhino™ M1011 is a rugged, industrial-grade embosser designed for harsh environments. It creates durable, embossed labels on aluminum or stainless steel tape that withstand extreme temperatures, chemicals, and UV exposure — perfect for industrial, electrical, and plumbing applications.",
-    image: "/products/Rhino%20M1011.PNG"
+    image: "/products/Rhino_M1011.PNG"
   },
   // Industrial Labelers
   {
@@ -82,7 +82,7 @@ export const products: Product[] = [
     category: "Industrial Labelers",
     categorySlug: "industrial-labelers",
     description: "The Rhino™ 6000+ is a professional-grade industrial label maker designed for electricians, data-com professionals, and facility managers. It features a large color display, PC connectivity, and supports a wide variety of industrial label materials including heat-shrink tubes, vinyl, and nylon. Built for the toughest job sites.",
-    image: "/products/Rhino%206000%2B.PNG"
+    image: "/products/Rhino_6000+.PNG"
   },
   // Home & Mobile Label Makers
   {
