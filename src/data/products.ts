@@ -48,7 +48,7 @@ export const products: Product[] = [
     category: "PC & Mac Label Printers",
     categorySlug: "pc-mac-printers",
     description: "The LabelWriter™ 550 is a direct thermal label printer that eliminates the need for expensive ink or toner cartridges. It prints up to 62 labels per minute and connects via USB. Ideal for address labels, shipping labels, file folder labels, and barcodes in office and small business environments.",
-    image: "/products/labelWritter_550.PNG"
+    image: "/products/labelWritter_550(1).PNG"
   },
   {
     slug: "labelwriter-550-turbo",
@@ -56,7 +56,7 @@ export const products: Product[] = [
     category: "PC & Mac Label Printers",
     categorySlug: "pc-mac-printers",
     description: "The LabelWriter™ 550 Turbo delivers high-speed direct thermal printing with both USB and LAN connectivity, enabling network-wide label printing. Print up to 71 labels per minute with no ink or toner required. Perfect for busy offices, shipping departments, and multi-user environments that demand fast, reliable label output.",
-    image: "/products/Rhino 6000+.PNG"
+    image: "/products/labelWritter_550.PNG"
   },
   // Embossers
   {
