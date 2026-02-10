@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -93,13 +94,16 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* Mobile toggle */}
-        <button
+        <div className="flex items-center gap-1">
+          <ThemeToggle />
+          {/* Mobile toggle */}
+          <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="md:hidden text-nav-foreground p-2"
         >
-          {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
