@@ -22,7 +22,7 @@ const About = () => {
               AI Global is a trusted regional operator for DYMO Label Printers and Enterprise Labeling Solutions, serving businesses with reliable, accurate, and efficient identification and printing systems. We specialize in providing end-to-end labeling solutions for offices, logistics, manufacturing, retail, and industrial environments.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              With over 17 years of combined industry experience, we understand the importance of precision, speed, and dependability in today's business operations.
+              With over 17+ years of combined industry experience, we understand the importance of precision, speed, and dependability in today's business operations.
             </p>
           </div>
 
@@ -126,7 +126,7 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
               {[
                 "Authorized DYMO Regional Operator",
-                "17 Years of Experience",
+                "17+ Years of Experience",
                 "Genuine Products & Warranty Support",
                 "Professional Consultation",
                 "Reliable & Timely Delivery",
