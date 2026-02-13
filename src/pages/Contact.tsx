@@ -88,7 +88,7 @@ const Contact = () => {
               {[
                 { icon: Mail, label: "Email", value: "info@aiglobal.com" },
                 { icon: Phone, label: "Phone", value: "+91 78294 87141" },
-                { icon: MapPin, label: "Address", value: "Global Distribution Center" },
+                { icon: MapPin, label: "Address", value: "Regional Operations Center" },
               ].map((item) => {
                 const Icon = item.icon;
                 return (

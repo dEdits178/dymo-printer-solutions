@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { Shield, Clock, Award, ArrowRight } from "lucide-react";
 
 const stats = [
-  { icon: Clock, value: "25+", label: "Years of Experience" },
-  { icon: Shield, value: "Trusted", label: "DYMO Distributor" },
+  { icon: Clock, value: "17", label: "Years of Experience" },
+  { icon: Shield, value: "Trusted", label: "DYMO Regional Operator" },
   { icon: Award, value: "1000+", label: "Clients Served" },
 ];
 
@@ -16,7 +16,7 @@ const TrustSection = () => {
             Why Choose Us
           </p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Trusted Distributor of DYMO
+            Trusted Regional Operator for DYMO
           </h2>
           <p className="text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
             With over 25 years of experience, AI Global has been the go-to partner for businesses

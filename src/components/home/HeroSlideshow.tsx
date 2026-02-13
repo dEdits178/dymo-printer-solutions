@@ -1,25 +1,27 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import hero1 from "@/assets/hero-1.jpg";
-import hero2 from "@/assets/hero-2.jpg";
-import hero3 from "@/assets/hero-3.jpg";
+import slide1 from "@/assets/Slide1.PNG?url";
+import slide2 from "@/assets/Slide2.PNG?url";
+import slide3 from "@/assets/Slide3.PNG?url";
 
 const slides = [
   {
-    image: hero1,
-    title: "Distributors of DYMO Printers",
-    subtitle: "Label Printers and Corporate Solutions",
+    image: slide3,
+    title: "Regional Operator for DYMO Printers",
+    subtitle: "Label Printing & Enterprise Solutions",
     cta: { label: "Explore Products", to: "/products" },
   },
   {
-    image: hero2,
-    title: "Enterprise-Grade Distribution",
-    subtitle: "Reliable supply chain for all your labeling needs",
+    image: slide2,
+    title: "Enterprise-Grade Regional Operations",
+    subtitle: "Reliable service for all your labeling needs",
+    titleClass: "text-3xl md:text-4xl lg:text-5xl",
+    imageClass: "object-cover origin-center scale-[0.98]",
     cta: { label: "Learn More", to: "/about" },
   },
   {
-    image: hero3,
+    image: slide1,
     title: "Precision Labeling Technology",
     subtitle: "From desktop to industrial — we've got you covered",
     cta: { label: "View Products", to: "/products" },
@@ -52,7 +54,7 @@ const HeroSlideshow = () => {
           <img
             src={slide.image}
             alt={slide.title}
-            className="w-full h-full object-cover"
+            className={`w-full h-full ${slide.imageClass ?? "object-cover"}`}
           />
           <div className="hero-overlay absolute inset-0" />
         </div>
@@ -65,7 +67,7 @@ const HeroSlideshow = () => {
             AI Global
           </p>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-nav-foreground leading-tight mb-4">
-            {slides[current].title}
+            <span className={slides[current].titleClass ?? ""}>{slides[current].title}</span>
           </h1>
           <p className="text-nav-foreground/80 text-lg md:text-xl mb-8">
             {slides[current].subtitle}

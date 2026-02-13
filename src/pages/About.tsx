@@ -11,18 +11,18 @@ const About = () => {
           <div className="text-center mb-16">
             <p className="text-primary font-medium text-sm uppercase tracking-widest mb-2">Our Story</p>
             <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground">About AI Global</h1>
-            <p className="text-muted-foreground mt-3 text-lg">Label Printers &amp; Corporate Solutions</p>
-            <p className="text-primary font-semibold mt-1">Authorized Distributors of DYMO Label Printers</p>
+            <p className="text-muted-foreground mt-3 text-lg">Label Printing &amp; Enterprise Solutions</p>
+            <p className="text-primary font-semibold mt-1">Authorized Regional Operator for DYMO Label Printers</p>
           </div>
 
           {/* Who We Are */}
           <div className="max-w-3xl mx-auto mb-20">
             <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-6">Who We Are</h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-              AI Global is a trusted distributor of DYMO Label Printers and Corporate Labeling Solutions, serving businesses with reliable, accurate, and efficient identification and printing systems. We specialize in providing end-to-end labeling solutions for offices, logistics, manufacturing, retail, and industrial environments.
+              AI Global is a trusted regional operator for DYMO Label Printers and Enterprise Labeling Solutions, serving businesses with reliable, accurate, and efficient identification and printing systems. We specialize in providing end-to-end labeling solutions for offices, logistics, manufacturing, retail, and industrial environments.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              With over 25+ years of combined industry experience, we understand the importance of precision, speed, and dependability in today's business operations.
+              With over 17 years of combined industry experience, we understand the importance of precision, speed, and dependability in today's business operations.
             </p>
           </div>
 
@@ -32,7 +32,7 @@ const About = () => {
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                 <Eye className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="font-display text-xl font-bold text-foreground mb-4">Our Vision</h3>
+              <h3 className="font-display text-xl font-bold text-foreground mb-4">Our Commitment</h3>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -101,7 +101,7 @@ const About = () => {
             <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground text-center mb-10">What We Do</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { icon: Globe, text: "Distribution of DYMO Label Printers & Accessories" },
+                { icon: Globe, text: "Regional Operations for DYMO Label Printers & Accessories" },
                 { icon: Building, text: "Office & Industrial Labeling Systems" },
                 { icon: Users, text: "Product Consultation & Support" },
                 { icon: FileText, text: "Corporate Printing Solutions" },
@@ -125,8 +125,8 @@ const About = () => {
             <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground text-center mb-10">Why Choose AI Global?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
               {[
-                "Authorized DYMO Distributor",
-                "25+ Years of Experience",
+                "Authorized DYMO Regional Operator",
+                "17 Years of Experience",
                 "Genuine Products & Warranty Support",
                 "Professional Consultation",
                 "Reliable & Timely Delivery",
@@ -142,7 +142,7 @@ const About = () => {
           {/* Future Plans */}
           <div className="max-w-4xl mx-auto mb-16">
             <div className="bg-nav-gradient rounded-2xl p-8 md:p-12">
-              <h2 className="font-display text-2xl md:text-3xl font-bold text-nav-foreground mb-4">Our Future Plans</h2>
+              <h2 className="font-display text-2xl md:text-3xl font-bold text-nav-foreground mb-4">Our Vision</h2>
               <p className="text-nav-foreground/80 mb-6">
                 At AI Global, we believe in continuous growth and innovation. While our current focus is on Label Printers and Corporate Labeling Solutions, we are planning a strategic expansion into Property Management Services as part of our long-term vision.
               </p>

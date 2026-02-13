@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Zap, Printer, CheckCircle2, ArrowRight } from "lucide-react";
-import spotlightImg from "@/assets/spotlight-product.jpg";
 
 const features = [
   "Prints up to 71 labels per minute",
@@ -28,9 +27,9 @@ const SpotlightProduct = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-primary/5 rounded-3xl blur-2xl" />
               <img
-                src={spotlightImg}
+                src="/products/labelWritter_550.PNG"
                 alt="LabelWriter 550 Turbo"
-                className="relative w-full max-w-sm rounded-2xl shadow-xl"
+                className="relative w-full max-w-xl md:max-w-2xl rounded-2xl shadow-xl"
               />
             </div>
           </div>
