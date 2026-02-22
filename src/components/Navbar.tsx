@@ -33,12 +33,12 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
           <img 
-            src="/AI_logo.PNG" 
-            alt="AI Global" 
+            src="/AI_Vero.PNG" 
+            alt="Aivora India" 
             className="h-20 w-auto object-contain"
           />
           <div className="flex flex-col leading-tight">
-            <span className="font-display font-bold text-nav-foreground text-lg">AI Global</span>
+            <span className="font-display font-bold text-nav-foreground text-lg">Aivora India</span>
             <span className="text-[10px] text-nav-foreground/70 tracking-wider uppercase">Corporate Solutions</span>
           </div>
         </Link>

@@ -64,7 +64,7 @@ const HeroSlideshow = () => {
       <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
         <div className="max-w-xl animate-slide-up">
           <p className="text-primary font-medium text-sm uppercase tracking-widest mb-3">
-            AI Global
+            Aivora India
           </p>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-nav-foreground leading-tight mb-4">
             <span className={slides[current].titleClass ?? ""}>{slides[current].title}</span>

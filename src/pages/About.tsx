@@ -10,7 +10,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <p className="text-primary font-medium text-sm uppercase tracking-widest mb-2">Our Story</p>
-            <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground">About AI Global</h1>
+            <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground">About Aivora India</h1>
             <p className="text-muted-foreground mt-3 text-lg">Label Printing &amp; Enterprise Solutions</p>
             <p className="text-primary font-semibold mt-1">Authorized Regional Operator for DYMO Label Printers</p>
           </div>
@@ -19,7 +19,7 @@ const About = () => {
           <div className="max-w-3xl mx-auto mb-20">
             <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-6">Who We Are</h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-              AI Global is a trusted regional operator for DYMO Label Printers and Enterprise Labeling Solutions, serving businesses with reliable, accurate, and efficient identification and printing systems. We specialize in providing end-to-end labeling solutions for offices, logistics, manufacturing, retail, and industrial environments.
+              Aivora India is a trusted regional operator for DYMO Label Printers and Enterprise Labeling Solutions, serving businesses with reliable, accurate, and efficient identification and printing systems. We specialize in providing end-to-end labeling solutions for offices, logistics, manufacturing, retail, and industrial environments.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
               With over 17+ years of combined industry experience, we understand the importance of precision, speed, and dependability in today's business operations.
@@ -71,7 +71,7 @@ const About = () => {
           <div className="max-w-5xl mx-auto mb-20">
             <div className="text-center mb-10">
               <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-2">Experience &amp; Expertise</h2>
-              <p className="text-muted-foreground">At AI Global, we build our team with a focus on:</p>
+              <p className="text-muted-foreground">At Aivora India, we build our team with a focus on:</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
@@ -122,7 +122,7 @@ const About = () => {
 
           {/* Why Choose AI Global */}
           <div className="max-w-5xl mx-auto mb-20">
-            <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground text-center mb-10">Why Choose AI Global?</h2>
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground text-center mb-10">Why Choose Aivora India?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
               {[
                 "Authorized DYMO Regional Operator",
@@ -144,7 +144,7 @@ const About = () => {
             <div className="bg-nav-gradient rounded-2xl p-8 md:p-12">
               <h2 className="font-display text-2xl md:text-3xl font-bold text-nav-foreground mb-4">Our Vision</h2>
               <p className="text-nav-foreground/80 mb-6">
-                At AI Global, we believe in continuous growth and innovation. While our current focus is on Label Printers and Corporate Labeling Solutions, we are planning a strategic expansion into Property Management Services as part of our long-term vision.
+                At Aivora India, we believe in continuous growth and innovation. While our current focus is on Label Printers and Corporate Labeling Solutions, we are planning a strategic expansion into Property Management Services as part of our long-term vision.
               </p>
               <p className="text-nav-foreground/60 text-sm italic mb-8">
                 Built on the same principles: Accuracy, Reliability, Professionalism, and Client Trust.
@@ -167,7 +167,7 @@ const About = () => {
 
               <div className="border-t border-nav-foreground/20 pt-6">
                 <p className="text-nav-foreground/90 font-medium">
-                  🤝 Every solution we deliver — today and in the future — will meet the highest standards of quality and professionalism. At AI Global, your success is our priority.
+                  🤝 Every solution we deliver — today and in the future — will meet the highest standards of quality and professionalism. At Aivora India, your success is our priority.
                 </p>
               </div>
             </div>

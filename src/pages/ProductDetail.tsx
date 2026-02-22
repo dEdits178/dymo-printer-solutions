@@ -1,9 +1,9 @@
 import { useParams, Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { getProductBySlug } from "@/data/products";
-import { Tag, ArrowLeft, Mail } from "lucide-react";
+import { Tag, ArrowLeft, MessageCircle } from "lucide-react";
 
-const INTEREST_EMAIL = "info@aiglobal.com";
+const WHATSAPP_NUMBER = "917829487141";
 
 const ProductDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -24,7 +24,7 @@ const ProductDetail = () => {
     );
   }
 
-  const mailtoLink = `mailto:${INTEREST_EMAIL}?subject=${encodeURIComponent(`Interested in ${product.name}`)}&body=${encodeURIComponent(`Hi AI Global,\n\nI am interested in the ${product.name}.\n\nPlease share more details.\n\nThank you.`)}`;
+  const whatsappMessage = `Hello Aivora India!%0A%0AI'm interested in the ${product.name}.%0A%0APlease share more details.%0A%0AThank you.`;
 
   return (
     <Layout>
@@ -62,10 +62,12 @@ const ProductDetail = () => {
               <h1 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">{product.name}</h1>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">{product.description}</p>
               <a
-                href={mailtoLink}
-                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3.5 rounded-xl font-semibold text-sm hover:brightness-110 transition-all shadow-lg shadow-primary/20 w-fit"
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#25D366] text-white px-8 py-3.5 rounded-xl font-semibold text-sm hover:brightness-110 transition-all shadow-lg shadow-[#25D366]/20 w-fit"
               >
-                <Mail className="w-4 h-4" /> I'm Interested
+                <MessageCircle className="w-4 h-4" /> I'm Interested
               </a>
             </div>
           </div>

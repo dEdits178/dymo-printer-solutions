@@ -9,7 +9,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const message = `Hello AI Global!%0A%0AName: ${encodeURIComponent(formData.name)}%0APhone: ${encodeURIComponent(formData.number)}%0AEmail: ${encodeURIComponent(formData.email)}%0ARequirement: ${encodeURIComponent(formData.requirement)}`;
+    const message = `Hello Aivora India!%0A%0AName: ${encodeURIComponent(formData.name)}%0APhone: ${encodeURIComponent(formData.number)}%0AEmail: ${encodeURIComponent(formData.email)}%0ARequirement: ${encodeURIComponent(formData.requirement)}`;
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
     setFormData({ name: "", number: "", email: "", requirement: "" });
   };
@@ -86,7 +86,7 @@ const Contact = () => {
               </a>
 
               {[
-                { icon: Mail, label: "Email", value: "info@aiglobal.com" },
+                { icon: Mail, label: "Email", value: "aivoraind@gmail.com" },
                 { icon: Phone, label: "Phone", value: "+91 78294 87141" },
                 { icon: MapPin, label: "Address", value: "Regional Operations Center" },
               ].map((item) => {

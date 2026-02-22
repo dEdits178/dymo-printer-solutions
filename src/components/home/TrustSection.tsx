@@ -19,7 +19,7 @@ const TrustSection = () => {
             Trusted Regional Operator for DYMO
           </h2>
           <p className="text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
-            With over 17+ years of experience, AI Global has been the go-to partner for businesses
+            With over 17+ years of experience, Aivora India has been the go-to partner for businesses
             seeking reliable labeling solutions across the globe.
           </p>
 
